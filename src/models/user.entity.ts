@@ -15,7 +15,7 @@ export class User {
   email!: string;
 
   @Column({ nullable: false })
-  password!: string;
+  password!: string; // bcrypt hash
 
   @CreateDateColumn()
   createdAt!: Date;
